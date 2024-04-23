@@ -63,13 +63,17 @@ class MapVisualization:
 
     def draw_spawn_points(self):
         spawn_points = self.map.get_spawn_points()
+        ###############Jana#########################################
         f = open("spawnpoints.txt",'a')
+        ############################################################
         for i in range(len(spawn_points)):
             p = spawn_points[i]
             x = p.location.x
             y = -p.location.y
+            ###############Jana#########################################
             f.write(str(i) + " x=" + str(x) + " y=" + str(y) + "\n")
             #print(str(i) + "x=" + str(x) + " y=" + str(y) + "\n")
+            ###########################################################
             self.ax.text(x, y, str(i),
                          fontsize=6,
                          color='darkorange',
