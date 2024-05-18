@@ -1485,7 +1485,7 @@ def game_loop(args):
         traffic_manager = client.get_trafficmanager() #calls traffic manager
         spawn_points = sim_world.get_map().get_spawn_points() #returns all defualts spawn point present in the town 
         #route_1_indices = [181 , 102 , 117 , 155 , 2 , 90 , 82 , 218 , 12 , 183 , 112] #this spawn point list includes redundant spawnpoints 
-        route_1_indices = [102, 155 , 2 , 90 , 82 , 218 , 183 , 112] #list of spawn points to set the intended path , details about how to get the coordinates/ position of the spawn points are included in section 3.3.2 of the documentation
+        route_1_indices = [102, 155 , 2 , 90 , 82 , 218 , 183 , 112] #list of spawn points to set the intended path , details about how to get the coordinates/ position of the spawn points are included in section 4.3.2 of the documentation
         route_1 = []
         for ind in route_1_indices:
              route_1.append(spawn_points[ind].location) #get the coordinates of the spawn points
